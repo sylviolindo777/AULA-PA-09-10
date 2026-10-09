@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos | StepUp Calçados</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="produtos" data-base="../">
+  <header id="site-header"></header>
+
+  <main class="container secao">
+    <h1 class="secao__titulo">Nossos produtos</h1>
+
+    <div class="filtros">
+      <input type="search" id="busca" placeholder="Buscar calçado..." aria-label="Buscar">
+      <select id="filtro-categoria" aria-label="Categoria">
+        <option value="todas">Todas as categorias</option>
+        <option value="tenis">Tênis</option>
+        <option value="sandalia">Sandálias</option>
+        <option value="social">Sociais</option>
+        <option value="bota">Botas</option>
+        <option value="casual">Casual</option>
+      </select>
+      <select id="ordenar" aria-label="Ordenar">
+        <option value="padrao">Ordenar por</option>
+        <option value="menor">Menor preço</option>
+        <option value="maior">Maior preço</option>
+        <option value="nome">Nome (A-Z)</option>
+      </select>
+    </div>
+    <p class="contagem" id="contagem"></p>
+
+    <div class="grade" id="lista-produtos"></div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../js/produtos.js"></script>
+  <script src="../js/carrinho.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

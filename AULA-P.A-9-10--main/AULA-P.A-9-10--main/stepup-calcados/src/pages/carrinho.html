@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho | StepUp Calçados</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="carrinho" data-base="../">
+  <header id="site-header"></header>
+
+  <main class="container secao" id="area-carrinho">
+    <h1 class="secao__titulo">Meu carrinho</h1>
+    <div class="carrinho">
+      <div id="carrinho-itens"></div>
+
+      <aside class="resumo" id="resumo" hidden>
+        <h2>Resumo do pedido</h2>
+
+        <label for="cep">Calcular frete</label>
+        <div class="linha-input">
+          <input type="text" id="cep" placeholder="CEP (8 números)" maxlength="9" inputmode="numeric">
+          <button class="btn btn--secundario" id="btn-frete" type="button">OK</button>
+        </div>
+        <p class="msg" id="msg-frete"></p>
+
+        <label for="cupom">Cupom de desconto</label>
+        <div class="linha-input">
+          <input type="text" id="cupom" placeholder="Ex.: PRIMEIRA10">
+          <button class="btn btn--secundario" id="btn-cupom" type="button">Aplicar</button>
+        </div>
+        <p class="msg" id="msg-cupom"></p>
+
+        <dl class="totais">
+          <div><dt>Subtotal</dt><dd id="res-subtotal">R$ 0,00</dd></div>
+          <div><dt>Desconto</dt><dd id="res-desconto">R$ 0,00</dd></div>
+          <div><dt>Frete</dt><dd id="res-frete">Informe o CEP</dd></div>
+          <div class="totais__final"><dt>Total</dt><dd id="res-total">R$ 0,00</dd></div>
+        </dl>
+
+        <button class="btn btn--primario btn--bloco" id="btn-finalizar" type="button">Finalizar pedido</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../js/produtos.js"></script>
+  <script src="../js/carrinho.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
